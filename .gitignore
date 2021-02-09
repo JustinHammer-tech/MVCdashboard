@@ -1,1 +1,4 @@
 define.php
+.htaccess
+vendor
+node_modules
