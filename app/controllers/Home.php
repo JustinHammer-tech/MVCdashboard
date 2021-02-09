@@ -11,7 +11,7 @@ class Home extends \Dashboard\Core\Controller
     public function index()
     {
        $user = $this->model("User");
-       echo $user->GetUser();
+       $this->view("Home", "SignIn" );
     }
 
     public function About()

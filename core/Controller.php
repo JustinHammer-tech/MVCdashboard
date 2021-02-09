@@ -3,6 +3,7 @@
 namespace Dashboard\Core;
 class Controller
 {
+
     public function model($model){
         require_once MODEL_DIR . $model. "Model" . PHP_EXTENSION;
 
@@ -11,7 +12,8 @@ class Controller
         return new $_model;
     }
 
-    public function view($view){
+    public function view($controller , $method , $data = null){
 
+        require_once VIEW_DIR . $controller . "/" . $method . PHP_EXTENSION;
     }
 }

@@ -1,5 +1,13 @@
 <?php
 
+/*
+ * TODO: Function to transfer init data
+ * TODO: 1- title
+ * TODO:
+ * TODO:
+ * TODO:
+ * */
+
 namespace Dashboard\Core {
     class App
     {
@@ -43,7 +51,7 @@ namespace Dashboard\Core {
              * */
             //Sanitizing Params
             $this->params = $arr ? array_values($arr) : [];
-            print_r($arr);
+
             call_user_func_array([$this->controller, $this->method], $this->params);
 
 
@@ -58,7 +66,6 @@ namespace Dashboard\Core {
                 $url_params = explode("/", filter_var(trim($_GET["url"]), FILTER_SANITIZE_URL));
                 return $url_params;
             }
-
 
         }
     }

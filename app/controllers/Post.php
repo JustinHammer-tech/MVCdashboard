@@ -1,6 +1,5 @@
 <?php
 
-
 class Post
 {
     function __construct()
