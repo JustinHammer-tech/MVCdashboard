@@ -54,13 +54,10 @@ namespace Dashboard\Core {
 
             call_user_func_array([$this->controller, $this->method], $this->params);
 
-
         }
 
         function UrlSanitize()
         {
-
-
             //return URL PARAMS which contains Controller / Action / Params in an array
             if (isset($_GET["url"])) {
                 $url_params = explode("/", filter_var(trim($_GET["url"]), FILTER_SANITIZE_URL));

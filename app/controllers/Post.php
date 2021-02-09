@@ -1,6 +1,6 @@
 <?php
 
-class Post
+class Post extends \Dashboard\Core\Controller
 {
     function __construct()
     {
@@ -10,4 +10,17 @@ class Post
     {
 
     }
+    public function ViewPost($page_id){
+        echo $page_id;
+    }
+    public function CreatePost(){
+
+    }
+    public function EditPost(){
+
+    }
+    public function DeletePost(){
+
+    }
+
 }

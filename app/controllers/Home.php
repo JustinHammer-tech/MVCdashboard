@@ -14,19 +14,18 @@ class Home extends \Dashboard\Core\Controller
        $this->view("Home", "SignIn" );
     }
 
-    public function About()
-    {
-        echo "About";
-    }
-
-    public function SignIn()
+    public function Login()
     {
 
     }
 
-    public function SignOut()
+    public function Logout()
     {
 
     }
 
+    public function error_404()
+    {
+        $this->view_404();
+    }
 }
